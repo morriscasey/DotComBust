@@ -13,7 +13,8 @@ public class DotComTestDrive
 		locations.add("5");
 		locations.add("6");
 		
-		DotCom dot = new DotCom(locations);
+		DotCom dot = new DotCom();
+		dot.setLocationCells(locations);
 		
 		String guess = "4";
 		String result = dot.checkYourself(guess);

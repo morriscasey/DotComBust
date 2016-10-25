@@ -5,10 +5,16 @@ import java.util.ArrayList;
 public class DotCom
 {
 	private ArrayList<String> locationCells;
+	private String name;
 	
-	public DotCom(ArrayList<String>locations)
+	public void setLocationCells(ArrayList<String> loc)
 	{
-		this.locationCells = locations;		
+		locationCells = loc;
+	}
+	
+	public void setName(String name)
+	{
+		this.name = name;
 	}
 	
 	public String checkYourself(String userInput)
@@ -19,6 +25,7 @@ public class DotCom
 		if(index >= 0)
 		{
 			locationCells.remove(index);
+			
 			if(locationCells.isEmpty())
 				result = "kill";
 			else
