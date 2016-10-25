@@ -85,6 +85,7 @@ public class GameHelper
 				temp = String.valueOf(alphabet.charAt(column));
 				alphaCells.add(temp.concat(Integer.toString(row)));
 				x1++;
+				System.out.print(" coord "+ x+ " = " + alphaCells.get(x1-1));
 			}		
 		}
 		return alphaCells;
